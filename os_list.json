@@ -1,0 +1,92 @@
+{
+  "imager": {
+    "latest_version": "1.0.0",
+    "url": "https://github.com/jose1711/uconsole-rpi-imager-repo",
+    "devices": [
+      {
+        "name": "uConsole CM4",
+        "tags": [
+          "uconsole-cm4"
+        ],
+        "icon": "https://raw.githubusercontent.com/jose1711/uconsole-rpi-imager-repo/master/uconsole.png",
+        "description": "uConsole with CM4 module",
+        "matching_type": "exclusive",
+        "capabilities": []
+      },
+      {
+        "name": "No filtering",
+        "tags": [],
+        "default": false,
+        "description": "Show every possible image",
+        "matching_type": "inclusive",
+        "capabilities": []
+      }
+    ]
+  },
+  "os_list": [
+    {
+      "name": "uConsole CM4 Images",
+      "description": "Images for ClockworkPi uConsole with CM4 module",
+      "icon": "https://raw.githubusercontent.com/jose1711/uconsole-rpi-imager-repo/master/uconsole.png",
+      "subitems": [
+        {
+          "name": "Debian Trixie (uConsole CM4) - 64-bit",
+          "description": "Debian Trixie for ClockworkPi uConsole with CM4 module. Full desktop image.",
+          "icon": "https://raw.githubusercontent.com/jose1711/uconsole-rpi-imager-repo/master/uconsole.png",
+          "website": "https://github.com/jose1711/uconsole-rpi-imager-repo",
+          "release_date": "2026-02-25",
+          "url": "https://github.com/jose1711/uconsole-rpi-imager-repo/releases/download/202602/ClockworkPi-Trixie-6.12.67.img.xz",
+          "extract_size": 7831499264,
+          "extract_sha256": "d2d159ab79b86e75a841433e2bba274cc3c58953cb492579df8086eee86d3ec0",
+          "image_download_size": 1377086416,
+          "image_download_sha256": "d3ad714e4454d832d85630a426355361579060156e895580ed0de4b3445b5e76",
+          "devices": [
+            "uconsole-cm4"
+          ],
+          "init_format": "cloudinit-rpi",
+          "architecture": "armv8",
+          "capabilities": [
+            "rpi_connect"
+          ]
+        },
+        {
+          "name": "Debian Trixie Lite (uConsole CM4) - 64-bit",
+          "description": "Debian Trixie Lite for ClockworkPi uConsole with CM4 module. Minimal image without desktop.",
+          "icon": "https://raw.githubusercontent.com/jose1711/uconsole-rpi-imager-repo/master/uconsole.png",
+          "website": "https://github.com/jose1711/uconsole-rpi-imager-repo",
+          "release_date": "2026-02-25",
+          "url": "https://github.com/jose1711/uconsole-rpi-imager-repo/releases/download/202602/ClockworkPi-Trixie-lite-6.12.67.img.xz",
+          "extract_size": 3753841152,
+          "extract_sha256": "46c0462395c77e5efe7d4c35852c0d96c5a466139e824a48385d3deeae6e70c9",
+          "image_download_size": 580404256,
+          "image_download_sha256": "732c3aed54231da029ca8dbf3579f83e6fe690a2fbff44a22138733981e67717",
+          "devices": [
+            "uconsole-cm4"
+          ],
+          "init_format": "cloudinit-rpi",
+          "architecture": "armv8",
+          "capabilities": [
+            "rpi_connect"
+          ]
+        },
+        {
+          "name": "RetroPie (uConsole CM4) - 64-bit",
+          "description": "RetroPie for ClockworkPi uConsole with CM4 module. Retro gaming image.",
+          "icon": "https://raw.githubusercontent.com/jose1711/uconsole-rpi-imager-repo/master/uconsole.png",
+          "website": "https://github.com/jose1711/uconsole-rpi-imager-repo",
+          "release_date": "2026-02-25",
+          "url": "https://github.com/jose1711/uconsole-rpi-imager-repo/releases/download/202602/ClockworkPi-RetroPie-6.12.67.img.xz",
+          "extract_size": 4688425472,
+          "extract_sha256": "ba2ba9345cee3782340925d0d0b48e1e7fcd32630f34b30bf817c21d5c512623",
+          "image_download_size": 1141559336,
+          "image_download_sha256": "2f7e01237dd0d996300088d6d43eabb3afc7ea6e8b816ec2b1d45bf6846e9b28",
+          "devices": [
+            "uconsole-cm4"
+          ],
+          "init_format": "cloudinit-rpi",
+          "architecture": "armv8"
+        }
+      ]
+    }
+  ]
+}
