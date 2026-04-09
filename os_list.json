@@ -142,7 +142,7 @@
             "devterm-cm5",
             "devterm-cm4"
           ],
-          "init_format": "cloudinit-rpi",
+          "init_format": "none",
           "architecture": "armv8"
         }
       ]
