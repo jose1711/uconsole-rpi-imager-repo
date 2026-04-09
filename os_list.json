@@ -4,12 +4,52 @@
     "url": "https://github.com/jose1711/uconsole-rpi-imager-repo",
     "devices": [
       {
+        "name": "uConsole CM5",
+        "tags": [
+          "uconsole-cm5"
+        ],
+        "icon": "https://raw.githubusercontent.com/jose1711/uconsole-rpi-imager-repo/master/uconsole.png",
+        "description": "uConsole with CM5 module",
+        "matching_type": "exclusive",
+        "capabilities": []
+      },
+      {
         "name": "uConsole CM4",
         "tags": [
           "uconsole-cm4"
         ],
         "icon": "https://raw.githubusercontent.com/jose1711/uconsole-rpi-imager-repo/master/uconsole.png",
         "description": "uConsole with CM4 module",
+        "matching_type": "exclusive",
+        "capabilities": []
+      },
+      {
+        "name": "uConsole CM3",
+        "tags": [
+          "uconsole-cm3"
+        ],
+        "icon": "https://raw.githubusercontent.com/jose1711/uconsole-rpi-imager-repo/master/uconsole.png",
+        "description": "uConsole with CM3 module",
+        "matching_type": "exclusive",
+        "capabilities": []
+      },
+      {
+        "name": "DevTerm CM5",
+        "tags": [
+          "devterm-cm5"
+        ],
+        "icon": "https://raw.githubusercontent.com/jose1711/uconsole-rpi-imager-repo/master/devterm.png",
+        "description": "DevTerm with CM5 module",
+        "matching_type": "exclusive",
+        "capabilities": []
+      },
+      {
+        "name": "DevTerm CM4",
+        "tags": [
+          "devterm-cm4"
+        ],
+        "icon": "https://raw.githubusercontent.com/jose1711/uconsole-rpi-imager-repo/master/devterm.png",
+        "description": "DevTerm with CM4 module",
         "matching_type": "exclusive",
         "capabilities": []
       },
@@ -25,14 +65,14 @@
   },
   "os_list": [
     {
-      "name": "uConsole CM4 Images",
-      "description": "Images for ClockworkPi uConsole with CM4 module",
-      "icon": "https://raw.githubusercontent.com/jose1711/uconsole-rpi-imager-repo/master/uconsole.png",
+      "name": "Debian Trixie (64-bit)",
+      "description": "A port of Debian Trixie",
+      "icon": "https://downloads.raspberrypi.com/raspios_armhf/Raspberry_Pi_OS_(32-bit).png",
       "subitems": [
         {
-          "name": "Debian Trixie (uConsole CM4) - 64-bit",
-          "description": "Debian Trixie for ClockworkPi uConsole with CM4 module. Full desktop image.",
-          "icon": "https://raw.githubusercontent.com/jose1711/uconsole-rpi-imager-repo/master/uconsole.png",
+          "name": "Debian Trixie Full - 64-bit",
+          "description": "Debian Trixie for ClockworkPi uConsole/DevTerm. Full desktop image.",
+          "icon": "https://downloads.raspberrypi.com/raspios_armhf/Raspberry_Pi_OS_(32-bit).png",
           "website": "https://github.com/jose1711/uconsole-rpi-imager-repo",
           "release_date": "2026-02-25",
           "url": "https://github.com/jose1711/uconsole-rpi-imager-repo/releases/download/202602/ClockworkPi-Trixie-6.12.67.img.xz",
@@ -41,7 +81,11 @@
           "image_download_size": 1377086416,
           "image_download_sha256": "d3ad714e4454d832d85630a426355361579060156e895580ed0de4b3445b5e76",
           "devices": [
-            "uconsole-cm4"
+            "uconsole-cm5",
+            "uconsole-cm4",
+            "uconsole-cm3",
+            "devterm-cm5",
+            "devterm-cm4"
           ],
           "init_format": "cloudinit-rpi",
           "architecture": "armv8",
@@ -50,9 +94,9 @@
           ]
         },
         {
-          "name": "Debian Trixie Lite (uConsole CM4) - 64-bit",
-          "description": "Debian Trixie Lite for ClockworkPi uConsole with CM4 module. Minimal image without desktop.",
-          "icon": "https://raw.githubusercontent.com/jose1711/uconsole-rpi-imager-repo/master/uconsole.png",
+          "name": "Debian Trixie Lite - 64-bit",
+          "description": "Debian Trixie Lite for ClockworkPi uConsole/DevTerm. Minimal image without desktop.",
+          "icon": "https://downloads.raspberrypi.com/raspios_armhf/Raspberry_Pi_OS_(32-bit).png",
           "website": "https://github.com/jose1711/uconsole-rpi-imager-repo",
           "release_date": "2026-02-25",
           "url": "https://github.com/jose1711/uconsole-rpi-imager-repo/releases/download/202602/ClockworkPi-Trixie-lite-6.12.67.img.xz",
@@ -61,18 +105,29 @@
           "image_download_size": 580404256,
           "image_download_sha256": "732c3aed54231da029ca8dbf3579f83e6fe690a2fbff44a22138733981e67717",
           "devices": [
-            "uconsole-cm4"
+            "uconsole-cm5",
+            "uconsole-cm4",
+            "uconsole-cm3",
+            "devterm-cm5",
+            "devterm-cm4"
           ],
           "init_format": "cloudinit-rpi",
           "architecture": "armv8",
           "capabilities": [
             "rpi_connect"
           ]
-        },
+        }
+      ]
+    },
+      {
+      "name": "Emulation and game OS",
+      "description": "Emulators for running retro-computing platforms",
+      "icon": "icons/cat_emulation_and_games.png",
+      "subitems": [
         {
-          "name": "RetroPie (uConsole CM4) - 64-bit",
-          "description": "RetroPie for ClockworkPi uConsole with CM4 module. Retro gaming image.",
-          "icon": "https://raw.githubusercontent.com/jose1711/uconsole-rpi-imager-repo/master/uconsole.png",
+          "name": "RetroPie - 64-bit",
+          "description": "RetroPie for ClockworkPi uConsole/DevTerm. Retro gaming image.",
+          "icon": "https://retropie.org.uk/retropie-logo-40x40.png",
           "website": "https://github.com/jose1711/uconsole-rpi-imager-repo",
           "release_date": "2026-02-25",
           "url": "https://github.com/jose1711/uconsole-rpi-imager-repo/releases/download/202602/ClockworkPi-RetroPie-6.12.67.img.xz",
@@ -81,7 +136,11 @@
           "image_download_size": 1141559336,
           "image_download_sha256": "2f7e01237dd0d996300088d6d43eabb3afc7ea6e8b816ec2b1d45bf6846e9b28",
           "devices": [
-            "uconsole-cm4"
+            "uconsole-cm5",
+            "uconsole-cm4",
+            "uconsole-cm3",
+            "devterm-cm5",
+            "devterm-cm4"
           ],
           "init_format": "cloudinit-rpi",
           "architecture": "armv8"
