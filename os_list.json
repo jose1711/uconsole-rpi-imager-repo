@@ -70,7 +70,7 @@
       "icon": "https://downloads.raspberrypi.com/raspios_armhf/Raspberry_Pi_OS_(32-bit).png",
       "subitems": [
         {
-          "name": "Debian Trixie Full - 64-bit",
+          "name": "(@rex) Debian Trixie Full - 64-bit",
           "description": "Debian Trixie for ClockworkPi uConsole/DevTerm. Full desktop image.",
           "icon": "https://downloads.raspberrypi.com/raspios_armhf/Raspberry_Pi_OS_(32-bit).png",
           "website": "https://github.com/jose1711/uconsole-rpi-imager-repo",
@@ -94,7 +94,7 @@
           ]
         },
         {
-          "name": "Debian Trixie Lite - 64-bit",
+          "name": "(@rex) Debian Trixie Lite - 64-bit",
           "description": "Debian Trixie Lite for ClockworkPi uConsole/DevTerm. Minimal image without desktop.",
           "icon": "https://downloads.raspberrypi.com/raspios_armhf/Raspberry_Pi_OS_(32-bit).png",
           "website": "https://github.com/jose1711/uconsole-rpi-imager-repo",
@@ -119,13 +119,13 @@
         }
       ]
     },
-      {
+    {
       "name": "Emulation and game OS",
       "description": "Emulators for running retro-computing platforms",
       "icon": "icons/cat_emulation_and_games.png",
       "subitems": [
         {
-          "name": "RetroPie - 64-bit",
+          "name": "(@rex) RetroPie - 64-bit",
           "description": "RetroPie for ClockworkPi uConsole/DevTerm. Retro gaming image.",
           "icon": "https://retropie.org.uk/retropie-logo-40x40.png",
           "website": "https://github.com/jose1711/uconsole-rpi-imager-repo",
@@ -143,6 +143,104 @@
             "devterm-cm4"
           ],
           "init_format": "none",
+          "architecture": "armv8"
+        }
+      ]
+    },
+    {
+      "name": "Security Tools",
+      "description": "Security and penetration testing distributions",
+      "icon": "icons/cat_misc_utility_images.png",
+      "subitems": [
+        {
+          "name": "(@rex) Kali Linux - 64-bit",
+          "description": "Kali Linux for ClockworkPi uConsole/DevTerm. Penetration testing and security tools.",
+          "icon": "https://www.kali.org/images/kali-logo-full-size.png",
+          "website": "https://www.kali.org",
+          "release_date": "2026-04-12",
+          "url": "https://freeshell.de/~jose1711/clockworkpi_images/ClockworkPi-Kali-6.12.67.img.xz",
+          "extract_size": 18174591488,
+          "extract_sha256": "62778c5f7d4959c9abd6400adcf8d019afde2c815dd706aff912103abd7c4bce",
+          "image_download_size": 3878981364,
+          "image_download_sha256": "17c37ee79849cb763b4efc785b810254738b656b6ac8aaa562a134efca755721",
+          "devices": [
+            "uconsole-cm5",
+            "uconsole-cm4",
+            "uconsole-cm3",
+            "devterm-cm5",
+            "devterm-cm4"
+          ],
+          "init_format": "cloudinit-rpi",
+          "architecture": "armv8"
+        },
+        {
+          "name": "(@rex) Parrot Security OS - 64-bit",
+          "description": "Parrot Security OS for ClockworkPi uConsole/DevTerm. Security and privacy focused distribution.",
+          "icon": "https://www.parrotsec.org/images/logo.png",
+          "website": "https://www.parrotsec.org",
+          "release_date": "2026-04-12",
+          "url": "https://freeshell.de/~jose1711/clockworkpi_images/ClockworkPi-ParrotSecurity-6.12.67.img.xz",
+          "extract_size": 14400655872,
+          "extract_sha256": "de11f060d0ad6f95e296b827144228690b19987e92c18926cc37c87729a48138",
+          "image_download_size": 3588636392,
+          "image_download_sha256": "5fc060d2f47ecde6dcd3eac38901554691286aab7ccfac5ed012bbcb72182176",
+          "devices": [
+            "uconsole-cm5",
+            "uconsole-cm4",
+            "uconsole-cm3",
+            "devterm-cm5",
+            "devterm-cm4"
+          ],
+          "init_format": "cloudinit-rpi",
+          "architecture": "armv8"
+        },
+        {
+          "name": "(@rex) Parrot Home - 64-bit",
+          "description": "Parrot Home for ClockworkPi uConsole/DevTerm. Lightweight security focused OS.",
+          "icon": "https://www.parrotsec.org/images/logo.png",
+          "website": "https://www.parrotsec.org",
+          "release_date": "2026-04-12",
+          "url": "https://freeshell.de/~jose1711/clockworkpi_images/ClockworkPi-ParrotHome-6.12.67.img.xz",
+          "extract_size": 7410930176,
+          "extract_sha256": "44936cf46011c8c8edbfd94fa64027e79fca9c98e6f91143c3dc85a4deb237be",
+          "image_download_size": 1834008188,
+          "image_download_sha256": "d4e4723b43602d6cb7911338fc9f5011d9a0b0517fb2fc26edbcc6d94a81e9fb",
+          "devices": [
+            "uconsole-cm5",
+            "uconsole-cm4",
+            "uconsole-cm3",
+            "devterm-cm5",
+            "devterm-cm4"
+          ],
+          "init_format": "cloudinit-rpi",
+          "architecture": "armv8"
+        }
+      ]
+    },
+    {
+      "name": "Other Operating Systems",
+      "description": "Alternative and specialized operating systems",
+      "icon": "icons/cat_other_specific_purpose_operating_systems.png",
+      "subitems": [
+        {
+          "name": "(@rex) DragonOS - 64-bit",
+          "description": "DragonOS for ClockworkPi uConsole/DevTerm. Advanced Linux distribution.",
+          "icon": "https://dragonos.org/images/logo.png",
+          "website": "https://dragonos.org",
+          "release_date": "2026-04-12",
+          "url": "https://freeshell.de/~jose1711/clockworkpi_images/ClockworkPi-DragonOS-6.12.67.img.xz",
+          "extract_size": 15615074816,
+          "extract_sha256": "aad4388595836ab2ab6a488f6270feec9195cf747825a977d5ac92069445f5e0",
+          "image_download_size": 3869950092,
+          "image_download_sha256": "581dc6eaddd912a52554e9df5d4fc7ef4a44d76941602b250bff580e205c882a",
+          "devices": [
+            "uconsole-cm5",
+            "uconsole-cm4",
+            "uconsole-cm3",
+            "devterm-cm5",
+            "devterm-cm4"
+          ],
+          "init_format": "cloudinit-rpi",
           "architecture": "armv8"
         }
       ]
