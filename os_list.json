@@ -261,7 +261,7 @@
           "architecture": "armv8"
         },
         {
-          "name": "(@zyriab) NixOS for CM5 - 64-bit",
+          "name": "(@zyriab) NixOS for CM5 (experimental) - 64-bit",
           "description": "NixOS for ClockworkPi uConsole CM5",
           "icon": "https://brand.nixos.org/logos/nixos-logo-rainbow-gradient-black-regular-vertical-recommended.svg",
           "website": "https://github.com/nixos-uconsole/nixos-uconsole",
