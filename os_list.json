@@ -155,7 +155,7 @@
         {
           "name": "(@rex) Kali Linux - 64-bit",
           "description": "Kali Linux for ClockworkPi uConsole/DevTerm. Penetration testing and security tools.",
-          "icon": "https://www.kali.org/images/kali-logo-full-size.png",
+          "icon": "https://www.kali.org/images/kali-logo.svg",
           "website": "https://www.kali.org",
           "release_date": "2026-04-12",
           "url": "https://freeshell.de/~jose1711/clockworkpi_images/ClockworkPi-Kali-6.12.67.img.xz",
@@ -176,7 +176,7 @@
         {
           "name": "(@rex) Parrot Security OS - 64-bit",
           "description": "Parrot Security OS for ClockworkPi uConsole/DevTerm. Security and privacy focused distribution.",
-          "icon": "https://www.parrotsec.org/images/logo.png",
+          "icon": "https://raw.githubusercontent.com/jose1711/uconsole-rpi-imager-repo/master/os_icons/parrot_os.png",
           "website": "https://www.parrotsec.org",
           "release_date": "2026-04-12",
           "url": "https://freeshell.de/~jose1711/clockworkpi_images/ClockworkPi-ParrotSecurity-6.12.67.img.xz",
@@ -197,7 +197,7 @@
         {
           "name": "(@rex) Parrot Home - 64-bit",
           "description": "Parrot Home for ClockworkPi uConsole/DevTerm. Lightweight security focused OS.",
-          "icon": "https://www.parrotsec.org/images/logo.png",
+          "icon": "https://raw.githubusercontent.com/jose1711/uconsole-rpi-imager-repo/master/os_icons/parrot_os.png",
           "website": "https://www.parrotsec.org",
           "release_date": "2026-04-12",
           "url": "https://freeshell.de/~jose1711/clockworkpi_images/ClockworkPi-ParrotHome-6.12.67.img.xz",
@@ -224,9 +224,9 @@
       "subitems": [
         {
           "name": "(@rex) DragonOS - 64-bit",
-          "description": "DragonOS for ClockworkPi uConsole/DevTerm. Advanced Linux distribution.",
+          "description": "DragonOS for ClockworkPi uConsole/DevTerm. Out of the box OS for SDRs.",
           "icon": "https://dragonos.org/images/logo.png",
-          "website": "https://dragonos.org",
+          "website": "https://cemaxecuter.com/",
           "release_date": "2026-04-12",
           "url": "https://freeshell.de/~jose1711/clockworkpi_images/ClockworkPi-DragonOS-6.12.67.img.xz",
           "extract_size": 15615074816,
@@ -241,6 +241,40 @@
             "devterm-cm4"
           ],
           "init_format": "cloudinit-rpi",
+          "architecture": "armv8"
+        },
+        {
+          "name": "(@zyriab) NixOS for CM4 - 64-bit",
+          "description": "NixOS for ClockworkPi uConsole CM4",
+          "icon": "https://brand.nixos.org/logos/nixos-logo-rainbow-gradient-black-regular-vertical-recommended.svg",
+          "website": "https://github.com/nixos-uconsole/nixos-uconsole",
+          "release_date": "2026-04-11",
+          "url": "https://github.com/nixos-uconsole/nixos-uconsole/releases/download/v1.1.0/nixos-uconsole-cm4-v1.1.0.img.zst",
+          "extract_size": 6054150144,
+          "extract_sha256": "5ab52983ba3d17ea8405685d99116ede49ac33c118b08c52a3e34ed7168ce13b",
+          "image_download_size": 1633952193,
+          "image_download_sha256": "159c4d5a6394a5b814bd03949f1d21638da6c807c167b2feaf10ca64634e367a",
+          "devices": [
+            "uconsole-cm4"
+          ],
+          "init_format": "none",
+          "architecture": "armv8"
+        },
+        {
+          "name": "(@zyriab) NixOS for CM5 - 64-bit",
+          "description": "NixOS for ClockworkPi uConsole CM5",
+          "icon": "https://brand.nixos.org/logos/nixos-logo-rainbow-gradient-black-regular-vertical-recommended.svg",
+          "website": "https://github.com/nixos-uconsole/nixos-uconsole",
+          "release_date": "2026-04-11",
+          "url": "https://github.com/nixos-uconsole/nixos-uconsole/releases/download/v1.1.0/nixos-uconsole-cm5-v1.1.0.img.zst",
+          "extract_size": 5894905856,
+          "extract_sha256": "1fa902a2d3cc372500b227bd38a168aa6a05c6aa9337d86a7f498e8b78703229",
+          "image_download_size": 1626683513,
+          "image_download_sha256": "bc129dcfa16265da58e477e72e45735370fc1e3b72002a5d8ff5e220b0f5400c",
+          "devices": [
+            "uconsole-cm5"
+          ],
+          "init_format": "none",
           "architecture": "armv8"
         }
       ]
